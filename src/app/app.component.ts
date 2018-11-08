@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AppareilService } from './sercices/appareil.service';
 import { Observable, Subject, interval } from 'rxjs';
 import {Subscription} from 'rxjs'
+import { User } from './models/User.model';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import {Subscription} from 'rxjs'
 export class AppComponent implements OnInit, OnDestroy{
   isAuth = false;
   appareils: any[];
-  secondes: number;
+  secondes: number;  
   counterSubscription: Subscription;
   lastUpdate = new Promise((resolve, reject) => {
     const date = new Date();
