@@ -48,4 +48,5 @@ export class AppareilService {
     switchOffOne(i: number) {
         this.appareils[i].status = 'éteint';
     } 
+    
 }
