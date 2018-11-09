@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppareilComponent } from './appareil/appareil.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 import { AppareilService } from './sercices/appareil.service';
 import { AuthService} from './sercices/auth.service';
 import { AuthComponent } from './auth/auth.component';
@@ -47,6 +48,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [

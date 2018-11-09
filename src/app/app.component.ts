@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AppareilService } from './sercices/appareil.service';
 import { Observable, Subject, interval } from 'rxjs';
 import {Subscription} from 'rxjs'
-import { User } from './models/User.model';
+
 
 @Component({
   selector: 'app-root',
